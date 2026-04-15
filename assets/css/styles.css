@@ -1,0 +1,91 @@
+:root{
+  --gold:#B8975A;
+  --dark:#1C1C1C;
+  --white:#FFFFFF;
+  --cream:#FAF8F3;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: 'DM Sans', sans-serif;
+  background:var(--cream);
+}
+
+/* NAV */
+#nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  padding:20px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:rgba(0,0,0,0.6);
+  backdrop-filter:blur(10px);
+  z-index:100;
+}
+
+.nav-logo{
+  font-family:'Cormorant Garamond', serif;
+  font-size:24px;
+  color:white;
+  text-decoration:none;
+}
+
+.nav-links{
+  display:flex;
+  gap:30px;
+}
+
+.nav-link{
+  color:white;
+  text-decoration:none;
+  font-size:12px;
+}
+
+.nav-cta{
+  background:var(--gold);
+  padding:10px 20px;
+  color:white;
+  text-decoration:none;
+}
+
+/* HERO */
+#hero{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:white;
+
+  background:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.85)),
+    url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2000&q=80')
+    center/cover no-repeat;
+}
+
+.hero-content h1{
+  font-family:'Cormorant Garamond', serif;
+  font-size:64px;
+}
+
+.hero-content span{
+  color:var(--gold);
+}
+
+.hero-buttons{
+  margin-top:20px;
+}
+
+.btn-primary{
+  background:var(--gold);
+  padding:12px 25px;
+  color:white;
+  text-decoration:none;
+}
